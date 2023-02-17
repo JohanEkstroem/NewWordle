@@ -1,3 +1,1 @@
-import apa from './src/wordleCoreLogic.js';
-
-apa();
+import wordleCore from './src/wordleCoreLogic.js';
