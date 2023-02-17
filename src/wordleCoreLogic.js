@@ -1,3 +1,3 @@
-const apa = () => console.log('gris');
+const apa = () => 'gris';
 
 export default apa;
