@@ -2,13 +2,12 @@
   "name": "newwordle",
   "version": "1.0.0",
   "description": "",
-  "main": "server/index.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "npx tsc",
-    "start": "node/server/index.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q server/index.js\""
+    "start": "node ./server/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q ./server/index.js\""
   },
   "keywords": [],
   "author": "",
@@ -22,6 +21,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.7"
